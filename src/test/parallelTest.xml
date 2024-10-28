@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--Please note that File download feature is not implemented yet to support parallel execution.-->
+<!--<suite name="Thread Local Test Suite" parallel="methods" thread-count="20">-->
+<suite name="Thread Local Test Suite" >
+    <test name="Thread Local Tests" thread-count="5"  parallel="methods">
+        <classes>
+            <class name="org.example.demo.PageLoadTest"/>
+            <class name="org.example.demo.ExampleTest"/>
+        </classes>
+    </test>
+</suite>
